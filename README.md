@@ -7,12 +7,86 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Primeiros passos com Create React App
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Este projeto foi inicializado com o  
+[Create React App](https://github.com/facebook/create-react-app).
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## Scripts disponíveis
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### npx create-react-app <nome-do-projeto>
+
+Cria um novo projeto utilizando o modelo tradicional do Create React App.
+
+---
+
+### npm create vite@latest
+
+Cria um projeto de forma interativa utilizando o Vite (novo modelo).
+
+Durante o processo, é necessário:
+- Escolher o framework desejado
+- Selecionar a variante do projeto
+
+Após a criação do projeto, instale as dependências executando:
+
+```bash
+npm i
+```
+
+## Executando o projeto
+
+No diretório do projeto, você pode executar os seguintes comandos:
+
+### npm start
+
+Executa a aplicação em modo de desenvolvimento.
+Abra o endereço abaixo no navegador para visualizar a aplicação:
+http://localhost:3000
+Funcionalidades disponíveis nesse modo:
++ A página será recarregada automaticamente ao detectar alterações no código
++ Erros de lint podem ser visualizados diretamente no console
+
+### npm run dev
+
+Inicia a aplicação quando o projeto foi criado utilizando o Vite.
+
+### npm test
+
+Inicia o executor de testes em modo interativo (watch mode).
+Para mais informações, consulte a documentação oficial:
+https://facebook.github.io/create-react-app/docs/running-tests
+
+### npm run build
+Gera a versão de produção da aplicação na pasta build.
+Durante o processo de build:
+
++ O React é empacotado em modo de produção
++ O código é otimizado para melhor desempenho
++ Os arquivos são minificados e recebem hashes em seus nomes
+
+Após a finalização, a aplicação estará pronta para publicação.
+Para mais detalhes, consulte:
+https://facebook.github.io/create-react-app/docs/deployment
+
+## Estrutura base
+
++ node_modules: Onde as dependencias do projetos ficam
++ public: Assets estáticos e HTML de inicialização
++ src: Onde é programado os apps
++ src/index.js: Arquivo de inicializaçào do React
++ src/Apps.js Componente principal da aplicaçào
+
+## Extensão para React
+
++ ES7+ React/Redux/React-Native snippets
+    Buscar por Rreact snippets
+
+## Configutando Emmet
+
+Em acesse as configurações File > Preference > Settings. Selecione a seção Extensions. Em Include language addione conforme abaixo: 
+
++ Item: javascript
++ Value: javascriptreact

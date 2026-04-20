@@ -182,3 +182,10 @@
     border-right-color: var(--border);
   }
 }
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: goldenrod;
+  padding: 10px;
+}
