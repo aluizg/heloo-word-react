@@ -7,6 +7,8 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
+Ao utilizar o Vitae os arquivos js devem possuir a extenção .jsx
+
 ## Primeiros passos com Create React App
 
 Este projeto foi inicializado com o  
@@ -90,3 +92,12 @@ Em acesse as configurações File > Preference > Settings. Selecione a seção E
 
 + Item: javascript
 + Value: javascriptreact
+
+## Criando componentes
+
++ A pastade componentes convencionada é a `components`
++ O nome dos arquivos devem ser nomeados com camel case: FileComponent.js
+
+## Template Expressions
+
++ Sintaxe: `{ codigoJS }`
