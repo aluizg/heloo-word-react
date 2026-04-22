@@ -123,3 +123,9 @@ Todo hook inicia com o prefixo `use` e deve ser importado
 
 + Utilizado para gerenciar o estado de algum dado
 + Para guardar o dado definimos o nome da variável e para alterar vamos utilizar setNome, onde nome é o nome do nosso dado
+
+## CSS 
+
+### Global
+
+Utilizamos o index.css localizado em src
