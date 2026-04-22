@@ -101,3 +101,25 @@ Em acesse as configurações File > Preference > Settings. Selecione a seção E
 ## Template Expressions
 
 + Sintaxe: `{ codigoJS }`
+
+## Imagens
+
+Imagens publicas ficam na pasta public e podem ser acessadas pela tag html informando no path `/nome_da_imagem.jpg`
+
+Em outras pastas abaixo de src é necessário importrar a imagem em si
+```js
+    import City from './assets/city.jpg'
+
+    <img src={City} alt="Cidade" /> 
+```
+
+## Hooks
+
+Recursos do React que possuem diversas funções
+Podem ser customizados
+Todo hook inicia com o prefixo `use` e deve ser importado
+
+### useState
+
++ Utilizado para gerenciar o estado de algum dado
++ Para guardar o dado definimos o nome da variável e para alterar vamos utilizar setNome, onde nome é o nome do nosso dado
